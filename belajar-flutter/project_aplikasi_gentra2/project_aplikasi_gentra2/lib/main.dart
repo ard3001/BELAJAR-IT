@@ -13,19 +13,15 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'Login New Hanoman',
       home: Scaffold(
-        //isi scaffold
         resizeToAvoidBottomInset: false,
         appBar: AppBar(
-          title: Text("login Page"),
+          title: Text("login Hanoman"),
         ),
         body: Container(
-          //isi body: Container
           decoration: BoxDecoration(
-            //jumlah stop berbanding lurus dengan jumlah warna
             gradient: LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomCenter,
-              //jumlah stop berbanding lurus dengan jumlah warna
               stops: [0.3, 0.6, 0.9],
               colors: [
                 Color.fromRGBO(12, 235, 235, 1),
@@ -35,13 +31,11 @@ class _MyAppState extends State<MyApp> {
             ),
           ),
           child: Container(
-            //isi child: Container
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(12)),
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomCenter,
-                  //jumlah stop berbanding lurus dengan jumlah warna
                   stops: [0.3, 0.6, 0.9],
                   colors: [
                     Color.fromRGBO(12, 235, 235, 1),
@@ -57,19 +51,17 @@ class _MyAppState extends State<MyApp> {
                 ]),
             margin: EdgeInsets.fromLTRB(40, 35, 40, 50),
             child: Column(
-              //isi child: Column
               children: <Widget>[
                 Container(
                   margin: EdgeInsets.only(bottom: 45, top: 15),
                   child: Column(
                     children: <Widget>[
-                      Image.asset('assets/srg.png', width: 99, height: 45),
+                      Image.asset("assets/hanoman_image.jpeg",
+                          width: 180, height: 100),
                       Text(
                         "Login",
                         style: TextStyle(
-                            fontFamily: 'LexendDeca',
-                            fontSize: 19,
-                            fontWeight: FontWeight.bold),
+                            fontSize: 19, fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
@@ -115,13 +107,9 @@ class _MyAppState extends State<MyApp> {
                   ),
                 ),
               ],
-              //isi child: Column
             ),
-            //child: Container
           ),
-          //body: Container
         ),
-        //scaffold
       ),
     );
   }
